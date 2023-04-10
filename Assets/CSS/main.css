@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", Arial, Helvetica, sans-serif;
+    ;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.body-container {
+    height: fit-content;
+    background: url('../image/bg_pattern.jpg');
+    margin-top: 10px;
+}
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+.container {
+    width: 100%;
+    background: url('../image/headerbg.png') 50% 0 rgba(146, 146, 146, 0);
+}
+.slogan{
+    justify-content: space-between;
+}
+
+.toppbar {
+    background: rgba(201, 200, 200, 0.5);
+}
+
+.toppbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.toppbar-content>a {
+    font-size: 12px;
+    padding: 0 10px;
+    color: #048002;
+}
+
+.left-toppbar a:nth-child(2) {
+    border: 1px solid #016600;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.right-toppbar a:nth-child(2) {
+    border: 1px solid #016600;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
+
+.header-bar {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.img {
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.img .slogan {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(7, 66, 7);
+}
+
+input {
+    width: 20rem;
+    border: none;
+    padding: 2px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input {
+    background-color: white;
+    border: 1px solid rgb(242, 242, 242);
+    padding: 5px;
+}
+
+.fa-magnifying-glass {
+    color: rgb(7, 66, 7);
+}
+
+.hero-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-container {
+    background: rgb(26, 232, 33);
+    background: linear-gradient(90deg, rgb(17, 148, 21) 18%, rgb(19, 145, 72) 100%);
+    /* margin-bottom: 20px; */
+}
+
+.hero-menu > li {
+    width: 300px;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.25s linear;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+}
+
+.hero-menu li:hover {
+    background-color: rgb(2, 112, 2);
+    color: white;
+}
+
+.left-container {
+    width: 25%;
+}
+
+.banner {
+    width: 1200px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.body {
+    border: 1px solid;
+    display: flex;
+    height: calc(100% - 48vh + 5px);
+    /* padding: 10px; */
+}
+
+/* .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+
+.menu li {
+    background: transparent;
+    border: 1px solid black;
+    padding: 30px 30px 30px 10px;
+    border-collapse: collapse;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.15s ease-in;
+
+}
+
+.menu li:hover {
+    background: rgb(15, 138, 19);
+    background: linear-gradient(90deg, rgb(44, 201, 49) 18%, rgb(67, 211, 6) 80%);
+    border-color: white;
+    color: ghostwhite;
+
+}
+
+.right-container {
+    display: grid;
+    grid-template-columns: repeat(5, 220px);
+    gap: 25px;
+    padding: 10px 0;
+}
+
+.product {
+    width: 220px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgba(242, 242, 242, 0.356);
+    height: 350px;
+    border: 1px solid #e2e2e2;
+    transition: 0.2s linear;
+    border-radius: 10px;
+}
+.product:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.35);
+}
+
+.src-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    text-align:center;
+}
+
+.src-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.price {
+    color: red;
+    font-weight: 500;
+}
+
+footer {
+    background: url(../image/headerbg.png);
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-left-container {
+    width: 30%;
+    border-right: 1px solid;
+    border-color: black;
+    padding: 20px 20px 20px 0px;
+    margin: 10px;
+}
+
+.left-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-wrapper .text p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.left-wrapper .text p:nth-child(1) {
+    border-bottom: 1px solid;
+}
+
+.social-media {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media i {
+    font-size: 30px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.footer-right-container {
+    width: 70%;
+}
+
+.list-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-col li {
+    border-bottom: 1px solid rgb(168, 167, 167);
+    padding: 5px;
+}
+.menu-col li a{
+    color: #048002;
+}
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-twitter:hover {
+    color: rgb(49, 196, 245);
+}
+
+.fa-instagram:hover {
+    color: lightpink;
+}
+
+.icon-list {
+    Color: rgb(163, 163, 70);
+}
+
+.icon {
+    display: flex;
+}
+
+.sub-menu{
+    width: 250px !important;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: auto;
+    background-color: #025e00;
+    display: none;
+}
+.sub-menu ul li {
+    text-align: left !important;
+    padding: 10px;
+    transition: 0.15s linear;
+
+}
+.sub-menu li:hover{
+    background: #05b302;
+
+}
+.book-name{
+    text-transform: uppercase;
+}
+.hero-menu li.navbar-one:hover .navbar .sub-menu{
+    display: block;
+}
+.map{
+    padding: 20px 0;
+    overflow: hidden;
+}
+.map iframe{
+    object-fit: contain;
+    width: 300px;
+    height:200px;
+}
+@media screen and (max-width: 1240px) {
+    .wrap {
+        width: 1000px;
+    }
+
+    .right-container {
+        grid-template-columns: repeat(4, 220px);
+        gap: 40px;
+    }
+
+    .hero-menu li {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .wrap {
+        width: 800px;
+    }
+
+    .right-container {
+        grid-template-columns: repeat(3, 220px);
+        gap: 70px;
+    }
+
+    .hero-menu li {
+        padding: 10px;
+    }
+    .img .slogan{
+        font-size: 25px;
+    }
+    .ảnh{
+        background: url("../image/headerbg.png") repeat scroll 0 0 rgba(0,0,0,0);
+        box-shadow: 0 0 4px #444;
+        margin: 10px auto;
+        padding: 30px;
+        width: 940px;
+        min-height: 400px;
+        size: 40%;
+    }
+}
+ /* THẮNG-GIỚI THIỆU*/
+.h1{margin-left: auto; }
+.thắng{color: orange; text-align: center;}
+.thắng2{color: gray; text-align: center;}
+.content{font-size: 110%; justify-content: center; margin-left: auto; }
+.original{ margin-left: 15%;
+ width: 70%;}
+ .ok{justify-content: center;margin-left: 5%; margin-right: 5%;}
+ .header{
+    position:relative;
+ }
+ /* DUYÊN-FORM, CHƯƠNG TRÌNH KHUYÊN MÃI */
+ .madon {
+    width: 50rem;
+    border:5px;
+    padding: 3px;
+    outline: none;
+    font-size: 15px;
+}
+.nengt{
+    width: 100%;
+    /* background: url('https://th.bing.com/th/id/OIP.yoQjp7ULuFkuM_rhJqqUbwHaBY?pid=ImgDet&rs=1') 100% 0 rgba(146, 146, 146, 0); */
+    background-image: url(https://media.istockphoto.com/id/1141124790/vector/green-color-circle-shape-technology-abstract-background.jpg?s=170667a&w=0&k=20&c=Zlu6pIsfz-tR9w5UGl5eIzBAyAh3pPmAy3lfqu6DHP8=);
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+ .chuyen{
+    margin-top: 10px;
+ }
+ .form-dki{
+    margin-top: 10px;
+ }
+ .sale{
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgba(242, 242, 242, 0.356);
+    height: 380px;
+ }
+.sale-sale{
+    display:flex;
+    margin:40px 50px 0px 60px;
+}
+.bookdetailwrap{
+    width: 98%;
+    background: url(../image/headerbg.png) repeat scroll 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 4px #444;
+    margin: 10px auto;
+    padding: 50px;
+    width: 940px;
+    min-height: 400px;
+}
+/* PHƯƠNG-SÁCH MỚI PHÁT HÀNH*/
+.pagetitle a {
+    background: url("../image/lbcenter.png") no-repeat scroll center top rgba(0,0,0,0);
+    color: #fff;
+    display: inline-block;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    font-weight: normal;
+    padding: 28px 10px 35px;
+    position: relative;
+    text-shadow: 1px 1px 1px rgba(116,117,118,.5);
+    text-transform: uppercase;
+}
+.pagetitle {
+    color: #000;
+    margin: 25px auto 30px;
+    padding: 0;
+    text-align: center;
+    width: 888px;
+}
+.pagetitle a:before {
+    background: url("../image/lbleft.png") no-repeat scroll 0 0 rgba(0,0,0,0);
+    content: " ";
+    display: block;
+    height: 85px;
+    left: -32px;
+    position: absolute;
+    top: 0;
+    width: 32px;
+    padding: 0
+}
+
+.pagetitle a:after {
+    background: url("../image/lbright.png") no-repeat scroll 0 0 rgba(0,0,0,0);
+    content: " ";
+    display: block;
+    height: 85px;
+    position: absolute;
+    right: -32px;
+    top: 0;
+    padding: 0;
+    width: 32px
+}
+
+/* HƯƠNG-SÁCH BÁN CHẠY*/
+
+.tonghop {
+    background: url("../image/headerbg.png") repeat scroll 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 4px #444;
+    margin: 10px auto;
+    padding: 30px;
+    width: 940px;
+    min-height: 400px;
+    size: 40%;
+}
+.muctren{
+    display:flex ; justify-content: center;
+}
+.hương{width: 40%; height: 50%;}
+
+.tensach1{
+    
+    line-height: 0;
+    padding-bottom: 3px;
+    margin-bottom: 50%;
+    text-transform: uppercase;
+    margin-left: 0%;
+    font-size: 130%;
+    font-weight: 900;
+    color: #f52121;
+    font-style: italic;
+    text-align: center;
+    
+    
+}
+.tensach2{
+    
+    line-height: 0;
+    padding-bottom: 3px;
+    margin-bottom: 50%;
+    text-transform: uppercase;
+    margin-left: 0%;
+    font-size: 130%;
+    font-weight: 900;
+    color: #090909;
+    font-style: italic;
+    text-align: center;
+    
+}
+.tensach3{
+    
+    line-height: 0;
+    padding-bottom: 3px;
+    margin-bottom: 50%;
+    text-transform: uppercase;
+    margin-left: 0%;
+    font-size: 130%;
+    font-weight: 900;
+    color: #025585;
+    font-style: italic;
+    text-align: center;
+    
+}
+.tensach4{
+    
+    line-height: 0;
+    padding-bottom: 3px;
+    margin-bottom: 50%;
+    text-transform: uppercase;
+    margin-left: 0%;
+    font-size: 130%;
+    font-weight: 900;
+    color: #21a4f5;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.thongtin span   {
+    color: black;
+    font-style: italic;
+    font-size:larger;
+    
+    
+}
+
+.thongtin a  {
+    color: black;
+    font-style: italic;
+    font-size: larger;
+    
+}
+
+
+.gioithieusach h1 {
+    border-bottom: 2px solid  #0f5731;
+    line-height: 0;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 900;
+    color: #0f5731;
+    font-style:italic;
+    
+
+}
+.thongtinchung{
+    margin-left: 20%;
+    margin-top: 8%;
+}
+.thongtin{
+    line-height: 2.5;
+}
+/* PHƯƠNG-SÁCH PHÁT HÀNH*/
+
+
+.number-pages{
+    font-size: 14px
+}
+
+.original-price{
+    color: #bebebe;
+    float: right;
+}
+
+
+.tonghopsach {
+    background: url("../image/headerbg.png") repeat scroll 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 4px #444;
+    margin: 10px auto;
+    padding: 30px;
+    width: 940px;
+    min-height: 400px;
+    size: 40%;
+}
+.muctrensach{
+    display: flex;
+}
+
+.tencuasach{
+    line-height: 0;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    margin-left: 0%;
+    font-size: 25px;
+    font-weight: 800;
+    color: #0f5731;
+    font-style:normal;
+    
+}
+.giasach{
+    font-weight: 700;
+}
+
+.thongtinsach span   {
+    color: black;
+    font-size:medium;
+}
+
+.thongtinsach a  {
+    color: black;
+    font-style:normal;
+    font-size:medium;
+}
+
+
+.gioithieuvesach h1 {
+    border-bottom: 2px solid  #0f5731;
+    line-height: 0;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    color: #0f5731;
+    font-style:normal;
+    
+
+}
+.thongtinchungsach{
+    margin-left: 20%;
+    margin-top: 8%;
+}
+/* TRÀ- CHI TIẾT CTKM*/
